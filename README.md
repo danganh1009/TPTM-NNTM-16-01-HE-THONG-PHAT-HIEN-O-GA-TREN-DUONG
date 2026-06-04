@@ -1,86 +1,140 @@
-# 🛣️ HỆ THỐNG PHÁT HIỆN Ổ GÀ TRÊN ĐƯỜNG KẾT HỢP XÁC THỰC DỮ LIỆU TRÊN BLOCKCHAIN
+# 🏙️ HỆ THỐNG PHÁT HIỆN Ổ GÀ THÔNG MINH CHO THÀNH PHỐ VÀ NÔNG NGHIỆP
 
 
-![banner](link_anh_banner.png)
-
----
-
-## � Hệ thống Xác Thực Blockchain
-
-Hệ thống phát hiện ổ gà tích hợp công nghệ **Blockchain** để xác thực, lưu trữ và chia sẻ dữ liệu phát hiện một cách minh bạch và bất biến.
+![banner](anh1.png)
 
 ---
 
-## 📌 Tính năng Blockchain
-- **Xác thực dữ liệu**: Mỗi phát hiện ổ gà được ghi lại trên blockchain với hash duy nhất.  
-- **Minh bạch & Bất biến**: Toàn bộ dữ liệu phát hiện được lưu trữ công khai, không thể chỉnh sửa hay xóa.  
-- **GPS + Blockchain**: Mỗi phát hiện kèm theo tọa độ GPS chính xác và thông tin blockchain.  
-- **Xác thực cộng đồng**: Cộng đồng người dùng có thể xác minh và quản lý các báo cáo ổ gà.  
+## 📝 Giới thiệu
+
+Hệ thống phát hiện ổ gà thông minh là một giải pháp tích hợp **AI/ML** và **Blockchain** để hỗ trợ:
+- 🏙️ **Thành phố Thông Minh (Smart Cities)**: Quản lý cơ sở hạ tầng giao thông hiệu quả
+- 🌾 **Nông nghiệp Thông Minh (Smart Agriculture)**: Giám sát tình trạng đường trong khu vực nông nghiệp
+- 🔐 **Xác thực Blockchain**: Bảo đảm tính minh bạch và bất biến của dữ liệu
 
 ---
 
-## 🖥️ Kiến trúc Blockchain
+## 🎯 Ứng dụng trong Smart Cities
+
+### Quản lý Hạ tầng Giao thông
+Hệ thống tự động phát hiện và báo cáo tình trạng đường:
+- ✅ Phát hiện ổ gà tự động từ camera trên đường
+- ✅ Ghi lại tọa độ GPS chính xác
+- ✅ Chia sẻ dữ liệu real-time cho cơ quan quản lý
+- ✅ Giúp các nhân viên bảo trì ưu tiên sửa chữa
+
+![Giao diện Hệ thống](anh2.png)
+
+### Lợi ích cho Thành phố
+- 📍 **Quản lý tập trung**: Bản đồ tất cả ổ gà trên toàn thành phố
+- ⏱️ **Phản ứng nhanh**: Giảm thời gian phát hiện và sửa chữa
+- 💰 **Tiết kiệm chi phí**: Tối ưu hóa tài nguyên sửa chữa
+- 🚗 **An toàn giao thông**: Giảm tai nạn do ổ gà
+
+---
+
+## 🌾 Ứng dụng trong Smart Agriculture
+
+### Giám sát Đường Nông thôn
+Ổ gà ảnh hưởng đến vận chuyển nông sản:
+- 🚚 Đảm bảo chất lượng vận chuyển nông sản
+- 🥕 Giảm hư hại sản phẩm nông nghiệp
+- 🗺️ Giám sát tình trạng đường nông thôn
+- 👨‍🌾 Hỗ trợ nông dân trong quản lý cộng đồng
+
+![Kết quả Phát hiện](anh3.png)
+
+### Lợi ích cho Nông nghiệp
+- 📊 **Theo dõi định kỳ**: Giám sát liên tục tình trạng đường
+- 🤝 **Cộng đồng**: Cùng nhau báo cáo vấn đề
+- 🏆 **Chất lượng**: Đảm bảo chất lượng hàng hóa nông sản
+- 🌱 **Phát triển bền vững**: Nâng cao chất lượng hạ tầng nông thôn
+
+---
+
+## 🔐 Công nghệ Blockchain cho Xác Thực
+
+### Tính năng Blockchain
+- **Xác thực dữ liệu**: Mỗi phát hiện được ghi lại trên blockchain với hash duy nhất
+- **Minh bạch & Bất biến**: Dữ liệu công khai, không thể chỉnh sửa hay xóa
+- **GPS + Blockchain**: Mỗi phát hiện kèm tọa độ GPS và hash blockchain
+- **Xác thực cộng đồng**: Cộng đồng có thể xác minh báo cáo
+
+### Kiến trúc Blockchain
 - **Blockchain**: Sepolia Testnet (Ethereum)
-- **Smart Contract**: PotholeHashRegistry.sol  
-- **Dữ liệu lưu trữ**: Hình ảnh, vị trí GPS, hash blockchain, timestamp
-- **Công khai**: Tất cả dữ liệu có thể xem tại: [Blockchain Explorer](link_sepolia_testnet)
+- **Smart Contract**: PotholeHashRegistry.sol
+- **Dữ liệu**: Hình ảnh, vị trí GPS, hash blockchain, timestamp
+- **Công khai**: Tất cả dữ liệu xem tại Blockchain Explorer
 
 ---
 
-## 🔍 Giao diện Xác Thực
+## 🛠️ Quy trình Hoạt động
 
-![Xác Thực Blockchain](anh1.png)
+### 1️⃣ Phát hiện
+- YOLOv8 phát hiện ổ gà từ video hoặc hình ảnh
+- Xác định vị trí trong khung hình (bounding box)
 
-Giao diện cho phép người dùng xem danh sách các phát hiện ổ gà cùng thông tin blockchain:
-- Ảnh phát hiện
-- Thời gian ghi lại (timestamp)
-- Tọa độ GPS
-- Hash blockchain (SHA-256 trên Sepolia Testnet)
-- Nút "Xác Thực" để kiểm tra trên blockchain
+### 2️⃣ Định vị
+- Lấy tọa độ GPS hiện tại
+- Ghi lại thông tin thời gian (timestamp)
 
----
+### 3️⃣ Xác thực
+- Tính SHA-256 từ dữ liệu ảnh + GPS
+- Ghi hash lên Sepolia Testnet thông qua PotholeHashRegistry
 
-## 📊 Các Ảnh Phát Hiện
-
-![Các Ảnh Phát Hiện Ổ Gà](anh2.png)
-
-Hệ thống hiển thị bộ sưu tập các ổ gà được phát hiện:
-- **Frame ID**: Định danh khung hình
-- **Thời gian**: Ngày giờ phát hiện
-- **Vị trí GPS**: Tọa độ chính xác (lat, lon)
-- **Hash Blockchain**: Mã hash xác thực trên blockchain
-- **Nút Xác Thực**: Liên kết trực tiếp đến Sepolia Testnet
+### 4️⃣ Chia sẻ
+- Dữ liệu có sẵn công khai trên blockchain explorer
+- Các cơ quan quản lý có thể xem và quản lý
 
 ---
 
-## ⚙️ Công nghệ sử dụng
-- **AI/ML**: YOLOv8, OpenCV, PyTorch  
-- **Blockchain**: Solidity, Web3.py, Sepolia Testnet  
-- **Backend**: Python, Flask  
-- **Frontend**: HTML, CSS, JavaScript  
-- **GPS**: Định vị toàn cầu, Tọa độ kinh vĩ độ  
+## 💻 Công nghệ sử dụng
+- **AI/ML**: YOLOv8, OpenCV, PyTorch
+- **Blockchain**: Solidity, Web3.py, Sepolia Testnet
+- **Backend**: Python, Flask
+- **Frontend**: HTML, CSS, JavaScript
+- **GPS**: Định vị toàn cầu, Tọa độ kinh vĩ độ
 
 ---
 
-## 🔐 Quy trình Xác Thực
-1. **Phát hiện**: YOLOv8 phát hiện ổ gà từ video
-2. **Ghi GPS**: Lấy tọa độ GPS hiện tại
-3. **Tính Hash**: Tạo SHA-256 từ dữ liệu ảnh + GPS
-4. **Ghi Blockchain**: Lưu hash lên Sepolia Testnet thông qua PotholeHashRegistry
-5. **Công khai**: Dữ liệu có thể truy cập công khai trên blockchain explorer
+## ✨ Ưu điểm của Hệ thống
+
+### Cho Smart Cities
+✅ **Quản lý tập trung**: Bản đồ toàn thành phố  
+✅ **Phản ứng nhanh**: Giảm thời gian sửa chữa  
+✅ **Tiết kiệm chi phí**: Tối ưu tài nguyên  
+✅ **An toàn**: Giảm tai nạn giao thông  
+
+### Cho Smart Agriculture
+✅ **Bảo vệ nông sản**: Giảm hư hại hàng hóa  
+✅ **Cộng đồng nông dân**: Cùng nhau quản lý  
+✅ **Chất lượng đường**: Giám sát liên tục  
+✅ **Phát triển bền vững**: Nâng cao hạ tầng nông thôn  
+
+### Cho Xác thực Dữ liệu
+✅ **Minh bạch**: Dữ liệu công khai, có thể kiểm chứng  
+✅ **An toàn**: Mã hóa và bất biến  
+✅ **Phân tán**: Không phụ thuộc máy chủ tập trung  
+✅ **Truy cập dễ**: Bất kỳ ai cũng có thể xác minh  
 
 ---
 
-## 📌 Ưu điểm của Blockchain
-✅ **Minh bạch**: Toàn bộ dữ liệu công khai, có thể kiểm chứng  
-✅ **An toàn**: Dữ liệu được mã hóa và bất biến  
-✅ **Phân tán**: Không phụ thuộc vào máy chủ tập trung  
-✅ **Truy cập**: Bất kỳ ai cũng có thể xác minh và truy cập dữ liệu  
-✅ **Ứng dụng**: Hỗ trợ quản lý hạ tầng giao thông hiệu quả  
+## � Kết luận
+
+Hệ thống phát hiện ổ gà thông minh là giải pháp toàn diện kết hợp:
+- 🤖 **AI/ML**: Công nghệ nhận dạng hình ảnh tiên tiến
+- 🏙️ **Smart Cities**: Quản lý hạ tầng giao thông thông minh
+- 🌾 **Smart Agriculture**: Hỗ trợ phát triển nông nghiệp
+- 🔐 **Blockchain**: Xác thực và chia sẻ dữ liệu minh bạch
+
+Hệ thống không chỉ giúp phát hiện vấn đề đường xá mà còn hỗ trợ cộng đồng, quản lý công khai dữ liệu và thúc đẩy phát triển đô thị - nông thôn bền vững.
 
 ---
 
-## 👤 Tác giả
-- Họ tên: Nguyễn Hải Đăng 
-- Lớp/Khoa: CNTT 16-04 - Đại học Đại Nam  
+## 👤 Thông tin Dự án
+- **Tên Dự án**: Hệ thống Phát hiện Ổ gà Thông Minh
+- **Môn học**: Thành phố Thông Minh & Nông nghiệp Thông Minh
+- **Tác giả**: Nguyễn Hải Đăng
+- **Lớp/Khoa**: CNTT 16-04 - Đại học Đại Nam
+- **Năm**: 2026  
 
