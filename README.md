@@ -1,7 +1,7 @@
 # 🏙️ HỆ THỐNG PHÁT HIỆN Ổ GÀ THÔNG MINH CHO THÀNH PHỐ VÀ NÔNG NGHIỆP
 
 
-![banner](anh1.png)
+![banner](link_anh_banner.png)
 
 ---
 
