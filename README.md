@@ -23,7 +23,7 @@ Hệ thống tự động phát hiện và báo cáo tình trạng đường:
 - ✅ Chia sẻ dữ liệu real-time cho cơ quan quản lý
 - ✅ Giúp các nhân viên bảo trì ưu tiên sửa chữa
 
-![Giao diện Hệ thống](anh1.png)
+![Giao diện Hệ thống](anh3.png)
 
 ### Lợi ích cho Thành phố
 - 📍 **Quản lý tập trung**: Bản đồ tất cả ổ gà trên toàn thành phố
@@ -42,7 +42,7 @@ Hệ thống tự động phát hiện và báo cáo tình trạng đường:
 - 🗺️ Giám sát tình trạng đường nông thôn
 - 👨‍🌾 Hỗ trợ nông dân trong quản lý cộng đồng
 
-![Kết quả Phát hiện](anh3.png)
+![Kết quả Phát hiện](anh1.png)
 
 ### Lợi ích cho Nông nghiệp
 - 📊 **Theo dõi định kỳ**: Giám sát liên tục tình trạng đường
